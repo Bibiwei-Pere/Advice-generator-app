@@ -8,7 +8,7 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
 
 ### Links
 
-- [Live Site URL](https://advicegenerator01.netlify.app)
+- [Live Site URL](https://advicegenerator1.netlify.app)
 
 ## My process
 
