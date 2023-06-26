@@ -1,0 +1,128 @@
+:root {
+    /* Primary */
+    --Light-Cyan: hsl(193, 38%, 86%);
+    --Neon-Green: hsl(150, 100%, 66%);
+
+    /* Neutral */
+    --Grayish-Blue: hsl(217, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Manrope', sans-serif;
+    background: var(--Dark-Blue);
+    color: white;
+    font-size: 28px;
+}
+
+h1 {
+    color: var(--Neon-Green);
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.container {
+    width: 600px;
+    height: 350px;
+    background: var(--Dark-Grayish-Blue);
+    border-radius: 10px;
+    padding: 30px 50px;
+}
+  
+  /* Slideshow container */
+  .slideshow-container div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 180px;
+    margin: 20px  auto;
+  }
+
+  .pattern-divider {
+    width: 100%;
+  }
+
+  button {
+    border: none;
+    position: relative;
+    border-radius: 50%;
+    padding: 15px;
+    margin: auto;
+    display: flex;
+    top: 39px;
+    background-color: var(--Neon-Green);
+  }
+
+  button:hover, button:active {
+    box-shadow: 2px 2px 20px 3px var(--Neon-Green);
+  }
+
+  .active {
+    background-color: #f11515;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 5s;
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+@media (max-width: 700px) {
+  .container {
+    width: 90%;
+  }
+
+  body {
+    font-size: 24px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+}
+
+/* Footer */
+.attribution {
+  position: absolute;
+  bottom: 0;
+  font-size: 11px;
+  text-align: center;
+  background-color: white;
+  padding: 1rem;
+  margin-top: 4rem;
+  color: black;
+  opacity: 0.5;
+  width: 100%;
+}
+
+.attribution:hover {
+  opacity: 1;
+}
+
+.attribution a {
+  text-decoration: none;
+  font-weight: bold;
+}
